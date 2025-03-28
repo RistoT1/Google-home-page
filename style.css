@@ -1,0 +1,147 @@
+body{
+    background-image: linear-gradient(rgb(0, 8, 53,0.5),rgb(26, 1, 23)),url(src/background.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: end;
+}
+.container{
+    background-color: rgba(226, 223, 223, 0.3);
+    min-width: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: flex-end;
+    max-width: 200px;
+}
+
+.icons {
+    display: flex;
+    align-items: end; /* Aligns items to the same level */
+    gap: 20px; /* Adjust this to control the spacing between the icons */
+    justify-content: flex-end; /* Ensures alignment to the right */
+    text-align: end;
+    padding: 5px;
+    
+}
+/* Add to your style.css */
+.popup-container {
+    position: relative; /* Make this the relative container */
+  
+    margin-left: 40px;
+
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    right: -15px;
+    background-color: rgba(224, 224, 224, 0.801);
+    border: 1px solid rgba(73, 73, 73, 0.801);
+    z-index: 1000;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 10px; 
+    padding: 5px;
+    margin-left: 10500px;
+    text-align: center;
+}
+
+
+.list button {
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    position: relative; /* Ensure the button is positioned relative to its container */
+}
+
+.container img {
+    width: 40%;
+    min-width: 35px;
+    margin: 0; /* Removes unnecessary margin */
+    height: auto;
+}
+
+.fluid-container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background:  rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 1px 10px;
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 20px 10px;
+    color: rgb(232, 243, 252);
+}
+.search-bar ::placeholder{
+    color: aliceblue;
+}
+.search-bar button img{
+    width: 25px;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    width: 400px; 
+    margin-top: 10px;
+    gap: 100px;
+}
+.button-container form {
+    flex: 1; /* Each button takes equal space */
+    padding: 2px;
+}
+.button-container button {
+    width: 100%;
+    height: 40px; /* Ensure all buttons have the same height */
+    border-radius: 20px;
+    background-color: rgba(221, 221, 221, 0.2);
+    color: white;
+    border: solid 1px rgb(92, 91, 91);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Space between text and image */
+}
+.button-container img{
+    width: 20%; 
+    height: auto;
+    vertical-align: middle;
+}
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+}
